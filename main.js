@@ -2,8 +2,41 @@
  * YOUR CODE HERE *
  ******************/
 
+function addMeToEnd(arr){
+  arr.push("Colin")
+}
+function addMeToStart(arr){
+  arr.unshift("Colin")
+}
+function changeLast(arr, element){
+  arr.pop()
+  arr.push(element)
+}
+function changeAllValuesTo(arr, single){
+   let items = arr.length 
+   for (let i = 0 ; i < items ; i++){  arr.pop() }
+   for (let i = 0 ; i < items ; i++){  arr.push(single) }
+}
 
+function oddOrEven(arr){
+  for (let i = 0 ; i < arr.length  ; i++){  
 
+  if(arr[i] % 2 === 0){
+    arr[i] = 'even'
+  }
+  else{
+    arr[i] = 'odd'
+  }
+}
+}
+function changeNextThreeToValue(start,arr,value){
+
+ if (start + 2 < arr.length ){
+  for (let i =  start ; i <= start + 2  ; i++){  
+    arr[i] = value
+   }   
+}
+}
 
 
 /*********************************
